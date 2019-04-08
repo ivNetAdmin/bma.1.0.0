@@ -1,0 +1,19 @@
+@import "variables";
+@import "topbar";
+ @import "navbar";
+ @import "parallax";
+ @import "home";
+
+body{
+   background-color: $default-bg-colour;
+ }
+
+ .clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}

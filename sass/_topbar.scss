@@ -1,0 +1,36 @@
+#top-header
+{
+   position: fixed;
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   padding: 5px;
+  // right: 0;
+   //left: 0;
+   z-index: 1030;
+   top: 0;
+   left: 0;
+  // border-width: 0 0 1px;
+   background-color: $default-bg-colour;
+   color: $light-text-colour;
+   width:100%;
+}
+
+.top-header-info
+{
+   margin-right: 20px;
+}
+
+.top-header-info .fa
+{
+   margin-right: 6px;
+}
+
+.navbar-fixed-top {
+   position: fixed;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+   top: 34px;
+   border-width: 0 0 1px;
+}
