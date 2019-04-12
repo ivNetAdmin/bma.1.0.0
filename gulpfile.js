@@ -36,11 +36,12 @@ var paths = {
       bstraprbcss: "./node_modules/bootstrap/dist/css/bootstrap-reboot.min.css",
       bstrapcss: "./node_modules/bootstrap/dist/css/bootstrap.min.css",    
       facss: "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+     // parallaxccs: "./node_modules/universal-parallax/dist/universal-parallax.css",
       csslib: "./css-lib/*.css",
       webfonts: "./node_modules/@fortawesome/fontawesome-free/webfonts/*",
 
       jquery: "./node_modules/jquery/dist/jquery.min.js",
-      parallaxjs: "./node_modules/universal-parallax/dist/universal-parallax.min.js",
+     // parallaxjs: "./node_modules/universal-parallax/dist/universal-parallax.min.js",
       bsstrapjs: "./node_modules/bootstrap/dist/js/bootstrap.min.js",
    }
 };
@@ -95,7 +96,7 @@ function style(){
 function libraryjs(){
    return (
       gulp
-         .src([paths.files.jquery, paths.files.bsstrapjs, paths.files.parallaxjs])
+         .src([paths.files.jquery, paths.files.bsstrapjs])
          //.pipe(sourcemaps.init())
          //.pipe(sourcemaps.write())
          .pipe(gulp.dest(paths.jscript.dest))

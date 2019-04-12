@@ -4,17 +4,15 @@ $(function() {
   });
 }); 
 
-$(window).scroll(function() {    
-   var scroll = $(window).scrollTop();
+// $(window).scroll(function() {    
+//    var scroll = $(window).scrollTop();
 
-   if (scroll >= 180) {
-    //  alert("cakes");
-      $('.navbar-brand img').addClass('shrink-navbar-brand');
-      $('.nav-logo').addClass('shrink-nav-logo');
-   } else {        
-      $('.nav-logo').removeClass('shrink-nav-logo');
-       $('.navbar-brand img').removeClass('shrink-navbar-brand');
-  }
-});
-
-nav-logo
+//    if (scroll >= 180) {
+//     //  alert("cakes");
+//       $('.navbar-brand img').addClass('shrink-navbar-brand');
+//       $('.nav-logo').addClass('shrink-nav-logo');
+//    } else {        
+//       $('.nav-logo').removeClass('shrink-nav-logo');
+//        $('.navbar-brand img').removeClass('shrink-navbar-brand');
+//   }
+// });

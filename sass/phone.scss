@@ -1,0 +1,37 @@
+body{
+   font-size: .75rem;
+}
+
+.h1, h1 {
+   font-size: 1.0rem;
+}
+
+#top-bar
+{
+   background-color: green;
+   font-size: .65rem;
+}
+
+#main-menu
+{
+   top: 25px;
+
+   .navbar-brand
+   {      
+      width: 70%;      
+   }
+}
+
+.container--full {
+   height: 100vh;
+}
+
+.home-section {
+   .content { 
+      padding: 30px 35px;
+      .btn-xl {
+         font-size: 14px;
+         padding: 10px 20px;
+      }
+   }
+}

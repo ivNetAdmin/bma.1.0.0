@@ -1,14 +1,30 @@
-.content--splash {
-   color: #e5e7ff;
-   margin: 0 auto;
-   padding: 80px;
-   text-align: justify;
-   text-shadow: 2px 2px #401d20;
-   position: relative;
-  // top:400px;
-  // left: 100px;
-}
+.home-section
+{
+   .content {
+      background: $brand-color-trans;
+      border-radius: 8px;
+      color: $white;
+      margin: 0 auto;
+      padding: 60px 35px;
+      text-align: center;
+      
+      h1, p {
+         text-shadow: 2px 2px $black;
+      }
 
-.icaew-logo img{
-  width:100%;
-  }
+      .btn-primary {
+         background-color: $primary-color;
+         border-color: $primary-color;
+     }
+
+     .btn-xl {
+         font-size: 18px;
+         padding: 20px 40px;
+         text-shadow: 1px 1px $black;
+      }
+   }
+
+   .bg-home {
+      background-image: url(../assets/images/img_parallax_home.jpg);
+   }
+}
