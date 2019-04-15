@@ -4,6 +4,11 @@
       background: $white;
     }
 
+    .btn-primary
+    {
+      background-color: $brand-color;
+    }
+
    .image-flip:hover .backside,
    .image-flip.hover .backside {
       // -webkit-transform: rotateY(0deg);

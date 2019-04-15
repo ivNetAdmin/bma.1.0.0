@@ -29,11 +29,16 @@
 // 	position: relative;
 // 	width: 100%;
 // }
-.container--big {
-	height: 175vh;
+
+.container--parallax
+{
+	h2{
+		padding: 20px 0 10px 0;
+		color: $brand-color;
+	}
 }
-.container--full {
-    height: 100vh;
+
+.container--parallax {
     -webkit-align-items: center;
 	align-items: center;
 	display: -webkit-flex;
@@ -48,8 +53,29 @@
 	position: relative;
 	width: 100%;
 }
-.container--small {
-	height: 40vh;
+
+.container--home {
+	height: 100vh;
+}
+.container--emma {
+	//height: 20vh;
+}
+.container--team {
+	padding-top: 40px;
+	
+	//height: 100vh;
+}
+.container--services {
+	padding: 40px 0 60px 0;
+	background-color: $brand-color-trans;
+	h2{
+		color: $white;
+	}
+	//height: 100vh;
+}
+
+.container--contact {
+	//height: 60vh;
 }
 .container .content {
 	background: rgba(0, 0, 0, .75);
