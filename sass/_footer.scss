@@ -1,0 +1,24 @@
+footer {
+   width: 100%;
+   position: fixed;
+   z-index: 200;
+   bottom: 0;
+   background: rgba(248,248,255,.9);
+   height: 160px;
+   border-top: 1px solid hsla(0,0%,100%,.5);
+
+   .footer-address {
+      padding: 16px 30px;
+      font-size: smaller;
+      font-weight: 700;      
+      }
+
+      .footer-list {
+         padding: 16px 20px;
+         font-size: smaller;   
+      }
+
+      .bmalogo-footer {
+         height: 160px;
+     }
+   }
