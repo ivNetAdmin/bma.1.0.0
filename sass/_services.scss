@@ -13,6 +13,16 @@
    height: 20vh; 
   }
 
+  .service-data{
+     display:none;
+  }
+  
+  a{
+   color: $black;
+  }
+  a:hover{     
+     text-decoration: none;
+  }
   .card:hover {
    -webkit-transform: scale(1.05);
    transform: scale(1.05);

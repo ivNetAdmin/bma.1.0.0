@@ -1,12 +1,25 @@
 #main-menu
 {
-   top: 35px;
+   top: 35px;   
+   transition: all .5s ease;
+}
+.navbar
+{
+   background-color: $white-trans;  
+}
+
+.shrink-navbar
+{
    background-color: $white;
+   max-height: 80px;
+   img{           
+      max-width: 360px;    
+   }
 }
 
 .navbar-brand
 {
    img {
-      width: 100%;
+      width: 100%;      
    }
 }
