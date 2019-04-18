@@ -40,7 +40,7 @@ var paths = {
      // parallaxccs: "./node_modules/universal-parallax/dist/universal-parallax.css",
       csslib: "./css-lib/*.css",
       webfonts: "./node_modules/@fortawesome/fontawesome-free/webfonts/*",
-      poppinsfonts: "./fonts/*",
+      sitefonts: "./fonts/*",
 
       jquery: "./node_modules/jquery/dist/jquery.min.js",
      // parallaxjs: "./node_modules/universal-parallax/dist/universal-parallax.min.js",
@@ -131,7 +131,7 @@ function image(){
 function webfonts(){
    return (
       gulp
-         .src([paths.files.webfonts,paths.files.poppinsfonts]) 
+         .src([paths.files.webfonts,paths.files.sitefonts]) 
          .pipe(gulp.dest(paths.webfont.dest))
          .pipe(browsersync.stream())
    );
