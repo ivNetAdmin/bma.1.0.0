@@ -31,6 +31,7 @@ var paths = {
    files: {
       html: "./site/*.html",
       pages: "./pages/*.html",
+      config: "./config/*.config",
       sass: "./sass/*.scss",
       images: "./images/*",
       bstraprbcss: "./node_modules/bootstrap/dist/css/bootstrap-reboot.min.css",
@@ -146,6 +147,15 @@ function html(){
    );
 };
 
+function config(){
+   return (
+      gulp
+         .src(paths.files.config)
+         .pipe(gulp.dest(paths.site.dest))
+         .pipe(browsersync.stream())
+   );
+};
+
 // watch files
 function watchfiles(){
    gulp.watch(paths.files.pages, gulp.series(html, browserReload));    
@@ -155,7 +165,7 @@ function watchfiles(){
 
 // complex tasks
 const libraries = gulp.parallel(librarycss, libraryjs, webfonts);
-const build = gulp.series(clean, gulp.parallel(libraries, style, javascript, image, html));
+const build = gulp.series(clean, gulp.parallel(libraries, style, javascript, image, html,config));
 const quick_build = gulp.parallel(libraries, style, javascript, html);
 const watch = gulp.parallel(browserSync, watchfiles);
 
@@ -173,6 +183,7 @@ exports.style = style;
 exports.javascript = javascript;
 exports.image = image;
 exports.html = html;
+exports.config = config;
 
 exports.quick_build = quick_build;
 exports.build = build;
