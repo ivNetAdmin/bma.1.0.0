@@ -6,9 +6,21 @@ $(function() {
   $('.service-link').bind('click',function(event){
       event.preventDefault();
       var element = '.'+$(this).attr('id');
-     // $(element).show();
+
+      $(".service-block").hide();
+      $(element).fadeIn(500);
   });
+
+  $('.service-data').bind('click',function(event){
+   event.preventDefault();
+  
+   $(".service-data").hide();
+   $(".service-block").fadeIn(500);
+});
+
 }); 
+
+
 
 $(window).scroll(function() {    
    var scroll = $(window).scrollTop();
