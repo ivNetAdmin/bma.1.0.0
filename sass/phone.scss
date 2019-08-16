@@ -27,11 +27,14 @@ body{
 }
 
 .home-section {
-   .content { 
-      padding: 30px 35px;
-      .btn-xl {
-         font-size: 14px;
-         padding: 10px 20px;
+   .container{
+      padding: 0;
+      .content { 
+         padding: 30px 35px;
+         .btn-xl {
+            font-size: 14px;
+            padding: 10px 20px;
+         }
       }
    }
 }
