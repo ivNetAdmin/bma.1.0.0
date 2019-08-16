@@ -25,6 +25,9 @@
    }
 
    .bg-home {
-      background-image: url(../assets/images/img_parallax_home.jpg);
+      background: #dde5fa;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #a8c0ff, #dde5fa);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #a8c0ff, #dde5fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      //background-image: url(../assets/images/img_parallax_home.jpg);
    }
 }

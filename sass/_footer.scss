@@ -5,7 +5,7 @@ footer {
    bottom: 0;
    background: rgba(248,248,255,.9);
    height: 160px;
-   border-top: 1px solid hsla(0,0%,100%,.5);
+   border-top: 1px solid $brand-color-trans;
 
    .footer-address {
       padding: 16px 30px;
